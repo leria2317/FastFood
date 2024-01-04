@@ -417,6 +417,51 @@ a.nav-link.active {
   margin-top: 96px;
 }
 
+.border-1 {
+  width: 346px;
+  height: 346px;
+  border-radius: 346px;
+  border: 1px dashed #f6762c;
+  opacity: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-2 {
+  width: 230px;
+  height: 230px;
+  stroke: #f6762c;
+  opacity: 0.3;
+  border: 1px dashed #f6762c;
+  border-radius: 346px;
+  text-align: center;
+  position: relative;
+}
+
+.w-1 {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Забезпечте, що зображення не виходить за межі .border-2 */
+  max-height: 100%; /* Забезпечте, що зображення не виходить за межі .border-2 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-1 {
+  position: relative;
+  bottom: 144px;
+  left: 310px;
+  z-index: 1;
+}
+
+.c-1::after {
+  content: url(../img/w-2.png);
+  border-radius: 346px;
+}
+
 /* SECTION-6 */
 .download {
   height: 170px;
